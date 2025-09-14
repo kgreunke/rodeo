@@ -72,6 +72,11 @@ defmodule RodeoWeb.Router do
       live "/organizations/new", OrganizationLive.Form, :new
       live "/organizations/:id", OrganizationLive.Show, :show
       live "/organizations/:id/edit", OrganizationLive.Form, :edit
+
+      live "/meets", MeetLive.Index, :index
+      live "/meets/new", MeetLive.Form, :new
+      live "/meets/:id", MeetLive.Show, :show
+      live "/meets/:id/edit", MeetLive.Form, :edit
     end
 
     post "/users/log-in", UserSessionController, :create
