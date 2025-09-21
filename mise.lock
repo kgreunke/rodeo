@@ -2,8 +2,12 @@
 version = "1.18.4-otp-28"
 backend = "core:elixir"
 
+[tools.elixir.platforms.linux-x64]
+checksum = "blake3:f364b92cc75b478d58c252f072fd9fcbf74c2cbe1f15438372d692b958da8041"
+size = 7911668
+
 [[tools.erlang]]
-version = "28.0.4"
+version = "28.1"
 backend = "core:erlang"
 
 [[tools.node]]
